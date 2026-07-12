@@ -1,0 +1,25 @@
+.pricing-management{margin-top:30px;padding:20px;border:1px solid var(--line);border-radius:18px;background:var(--surface);box-shadow:var(--shadow-sm)}
+.pricing-management-head{display:flex;align-items:center;justify-content:space-between;gap:18px}
+.pricing-management-head h2{color:var(--green);font-size:18px}
+.pricing-management-head p{margin-top:4px;color:var(--muted);font-size:10.5px}
+.pricing-management-head .secondary-button{min-height:38px;font-size:10.5px;white-space:nowrap}
+.service-pricing-list{display:grid;gap:8px;margin-top:18px}
+.service-pricing-row{display:grid;grid-template-columns:minmax(0,1fr) 180px 116px;align-items:center;gap:14px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+.service-pricing-title strong{display:block;font-size:11.5px;line-height:1.6}
+.service-pricing-title span{display:block;margin-top:2px;color:var(--muted);font-size:9px}
+.catalog-price-field{position:relative}
+.catalog-price-field input{width:100%;height:37px;padding:0 9px 0 47px;border:1px solid var(--line);border-radius:9px;outline:0;color:var(--green);background:#fff;direction:ltr;text-align:left;font-size:11px;font-weight:700}
+.catalog-price-field input:focus{border-color:var(--green-2);box-shadow:0 0 0 3px rgba(27,102,89,.1)}
+.catalog-price-field span{position:absolute;inset-block:0;inset-inline-end:9px;display:flex;align-items:center;color:var(--muted);font-size:8.5px;pointer-events:none}
+.visibility-toggle{display:flex;align-items:center;justify-content:flex-end;gap:7px;color:var(--muted);font-size:9.5px;cursor:pointer;user-select:none}
+.visibility-toggle input{position:absolute;opacity:0;pointer-events:none}
+.toggle-track{position:relative;width:38px;height:22px;flex:0 0 auto;border-radius:99px;background:#cdd7d1;transition:.2s}
+.toggle-track:after{content:"";position:absolute;width:16px;height:16px;top:3px;right:3px;border-radius:50%;background:#fff;box-shadow:0 1px 5px rgba(0,0,0,.18);transition:.2s}
+.visibility-toggle input:checked+.toggle-track{background:var(--green-2)}
+.visibility-toggle input:checked+.toggle-track:after{transform:translateX(-16px)}
+.visibility-toggle input:focus-visible+.toggle-track{box-shadow:0 0 0 3px rgba(27,102,89,.15)}
+.visibility-label{min-width:43px}
+.pricing-management-foot{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:16px;padding-top:15px;border-top:1px solid var(--line)}
+.pricing-management-foot span{color:var(--muted);font-size:9.5px}
+.pricing-management-foot .primary-button{min-height:40px;font-size:11px;white-space:nowrap}
+@media(max-width:680px){.pricing-management{padding:15px}.pricing-management-head,.pricing-management-foot{display:block}.pricing-management-head .secondary-button,.pricing-management-foot .primary-button{width:100%;margin-top:12px}.service-pricing-row{grid-template-columns:1fr}.visibility-toggle{justify-content:flex-start}.catalog-price-field input{text-align:right;direction:rtl}}

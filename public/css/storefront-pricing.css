@@ -1,0 +1,5 @@
+.service-public-price{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:14px;padding:9px 11px;border:1px solid #cfe0d4;border-radius:10px;color:var(--green-2);background:var(--mint-2)}
+.service-public-price span{font-size:9.5px}
+.service-public-price strong{font-size:12px;white-space:nowrap}
+.cart-line-price{display:block;margin-top:5px;color:var(--green);font-size:11px}
+.drawer-price-caption{margin-top:6px;color:var(--muted);font-size:9px}
