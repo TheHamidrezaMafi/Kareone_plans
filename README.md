@@ -12,6 +12,19 @@ npm start
 
 Open `http://localhost:3000`.
 
+## Run with Docker Compose
+
+```bash
+cp .env.example .env
+docker compose up --build -d
+```
+
+Open `http://localhost:3000`. SQLite data is persisted in a Docker volume. Stop the
+container with `docker compose down`.
+
+If port 3000 is already in use, open `http://localhost:3006` instead. You can
+choose another host port with `HOST_PORT=3007 docker compose up --build -d`.
+
 The single admin account is seeded from `ADMIN_USERNAME` and `ADMIN_PASSWORD` in `.env`. The admin panel is available at `/admin`. Change both values before deployment. Requests and quotes are persisted in SQLite at `DATABASE_FILE`.
 
 Default local credentials:
