@@ -71,7 +71,6 @@ body:after{content:"";position:fixed;z-index:70;top:0;bottom:0;left:16px;width:1
 .service-card.selected{background:rgba(255,255,255,.88)}
 .service-icon{border-radius:1px;color:#183761;background:rgba(203,182,161,.55)}
 .service-index{color:rgba(24,55,97,.46)}
-.service-category{color:#183761;font-weight:500}
 .service-card h3{color:#183761;font-weight:600}
 .service-english-title{margin-top:2px;color:rgba(24,55,97,.52);font-size:9.5px;font-weight:500;letter-spacing:.025em;text-align:right}
 .service-card p{color:rgba(24,55,97,.68);font-weight:300}

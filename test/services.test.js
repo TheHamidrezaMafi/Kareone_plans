@@ -16,3 +16,34 @@ test("KareOne catalog contains all 25 service deliverables", () => {
   assert.ok(serviceMap.has("persona"));
   assert.ok(serviceMap.has("monthly-report"));
 });
+
+test("annotated Market Navigator service copy is published", () => {
+  assert.equal(serviceMap.get("proposal").title, "پروپوزال پایه قابل شخصی‌سازی");
+  assert.equal(serviceMap.get("product-intro").title, "متن معرفی کوتاه و مفصل محصول");
+
+  const revisedServices = [
+    "systematic-screening",
+    "deep-review",
+    "financial-analysis",
+    "gtm-evaluation",
+    "feasibility-assessment",
+    "activation-program",
+    "sales-deck",
+    "catalog",
+    "proposal",
+    "brandbook",
+    "product-intro",
+    "call-script",
+    "demo-script",
+    "messaging-copy",
+    "social-content",
+    "lead-campaign",
+    "needs-form",
+    "sales-questionnaire",
+    "monthly-report"
+  ];
+
+  for (const id of revisedServices) {
+    assert.ok(serviceMap.get(id).short.length > 80, `${id} should contain its expanded annotated copy`);
+  }
+});
